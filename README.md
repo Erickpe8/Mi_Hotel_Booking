@@ -1,52 +1,52 @@
-# 🏨 Sistema de Reservas de Hotel - Testing Pack
 
-Santiago
+# Sistema de Reservas de Hotel - Testing Pack
 
-## Estrucutura
+## Estructura del Proyecto
 
 ```
-├── 📁 app
-│   ├── 📁 static
-│   │   └── 🎨 style.css
-│   ├── 📁 templates
-│   │   ├── 🌐 base.html
-│   │   ├── 🌐 booking.html
-│   │   ├── 🌐 index.html
-│   │   ├── 🌐 login.html
-│   │   ├── 🌐 register.html
-│   │   └── 🌐 search_results.html
-│   ├── 🐍 app.py
-│   ├── 🐍 db.py
-│   └── 🐍 init_db.py
-├── 📁 docs
-│   ├── 📝 IEEE829_Plan_Template.md
-│   ├── 📄 Matriz_Riesgo_RPN.xlsx
-│   ├── 📄 Matriz_Trazabilidad.xlsx
-│   └── 📝 Plan_Pruebas_Hotel.md
-├── 📁 metrics
-│   ├── 📁 dashboards
-│   │   ├── 🌐 dashboard_metricas.html
-│   │   └── ⚙️ metricas_resumen.json
-│   ├── 📁 figs
-│   │   ├── 🖼️ semaforo.png
-│   │   ├── 🖼️ severity.png
-│   │   ├── 🖼️ status.png
-│   │   └── 🖼️ trend.png
-│   ├── 📄 dataset_defectos.csv
-│   ├── 📄 dataset_defectos_backup.csv
-│   ├── 🐍 mejorar_dataset.py
-│   └── 🐍 sistema_metricas.py
-├── 📁 tests
-│   ├── ⚙️ pytest.ini
-│   └── 🐍 test_app.py
-├── 📝 README.md
-├── 📄 hotel_reservas.db
-├── 📄 requirements.txt
-└── 📄 run_app.bat
+├── app
+│   ├── static
+│   │   └── style.css
+│   ├── templates
+│   │   ├── base.html
+│   │   ├── booking.html
+│   │   ├── index.html
+│   │   ├── login.html
+│   │   ├── register.html
+│   │   └── search_results.html
+│   ├── app.py
+│   ├── db.py
+│   └── init_db.py
+├── docs
+│   ├── IEEE829_Plan_Template.md
+│   ├── Matriz_Riesgo_RPN.xlsx
+│   ├── Matriz_Trazabilidad.xlsx
+│   └── Plan_Pruebas_Hotel.md
+├── metrics
+│   ├── dashboards
+│   │   ├── dashboard_metricas.html
+│   │   └── metricas_resumen.json
+│   ├── figs
+│   │   ├── semaforo.png
+│   │   ├── severity.png
+│   │   ├── status.png
+│   │   └── trend.png
+│   ├── dataset_defectos.csv
+│   ├── dataset_defectos_backup.csv
+│   ├── mejorar_dataset.py
+│   └── sistema_metricas.py
+├── tests
+│   ├── pytest.ini
+│   └── test_app.py
+├── README.md
+├── hotel_reservas.db
+├── requirements.txt
+└── run_app.bat
 ```
+
 ---
 
-## 🚀 Instalación
+## Instalación
 
 ### 1. Requisitos Previos
 
@@ -65,7 +65,7 @@ cd c:\laragon\www\hotel_testing_pack
 ```bash
 # Windows
 python -m venv venv
-venv\Scripts\activate
+venv\Scriptsctivate
 
 # Linux/Mac
 python3 -m venv venv
@@ -79,6 +79,7 @@ pip install -r requirements.txt
 ```
 
 **Contenido de `requirements.txt`:**
+
 ```
 Flask==2.3.0
 Werkzeug==2.3.0
@@ -96,6 +97,7 @@ python app/init_db.py
 ```
 
 Debe ver el mensaje:
+
 ```
 DB inicializada en: C:\laragon\www\hotel_testing_pack\hotel_reservas.db
 Base de datos inicializada correctamente.
@@ -103,7 +105,7 @@ Base de datos inicializada correctamente.
 
 ---
 
-## 💻 Uso
+## Uso
 
 ### Ejecutar la Aplicación
 
@@ -124,16 +126,16 @@ La aplicación estará disponible en: **http://localhost:5000**
 
 ### Flujo de Usuario
 
-1. **Registrarse:** http://localhost:5000/register
-2. **Iniciar Sesión:** http://localhost:5000/login
-3. **Buscar Habitaciones:** En la página principal
-4. **Hacer Reserva:** Seleccionar habitación disponible
-5. **Pagar:** Confirmar pago simulado
-6. **Cerrar Sesión:** Click en "Cerrar sesión"
+1. **Registrarse**: http://localhost:5000/register
+2. **Iniciar Sesión**: http://localhost:5000/login
+3. **Buscar Habitaciones**: En la página principal
+4. **Hacer Reserva**: Seleccionar habitación disponible
+5. **Pagar**: Confirmar pago simulado
+6. **Cerrar Sesión**: Hacer clic en "Cerrar sesión"
 
 ---
 
-## 📊 Sistema de Métricas
+## Sistema de Métricas
 
 ### Ejecutar el Sistema de Métricas
 
@@ -141,33 +143,37 @@ La aplicación estará disponible en: **http://localhost:5000**
 cd metrics
 python sistema_metricas.py
 ```
+
 ### Sistema
-** imagen 1 ingreso de habitacion **
 
-<img width="942" height="536" alt="image" src="https://github.com/user-attachments/assets/4fb4c839-0168-4ae8-9725-eb8787783158" />
+**Imagen 1: Ingreso de habitación**
 
-** imagen 2 Registro de habitacion **
+![Ingreso de habitación](https://github.com/user-attachments/assets/4fb4c839-0168-4ae8-9725-eb8787783158)
 
-<img width="885" height="474" alt="image" src="https://github.com/user-attachments/assets/a9c8256a-749d-42da-9ac3-c292a92d15a1" />
+**Imagen 2: Registro de habitación**
 
-** imagen 3 pago **
+![Registro de habitación](https://github.com/user-attachments/assets/a9c8256a-749d-42da-9ac3-c292a92d15a1)
 
-<img width="913" height="248" alt="image" src="https://github.com/user-attachments/assets/e476aa64-cbad-4d29-ac29-376359d6202a" />
+**Imagen 3: Pago**
 
-** imagen 4 Pago **
+![Pago](https://github.com/user-attachments/assets/e476aa64-cbad-4d29-ac29-376359d6202a)
 
-<img width="882" height="239" alt="image" src="https://github.com/user-attachments/assets/364b38d1-f147-4e63-94b0-9ff2f0cbe608" />
+**Imagen 4: Pago**
 
-** imagen 5 Registro **
+![Pago](https://github.com/user-attachments/assets/364b38d1-f147-4e63-94b0-9ff2f0cbe608)
 
-<img width="859" height="394" alt="image" src="https://github.com/user-attachments/assets/9d514faf-eeab-46a1-9645-8e638afadffc" />
+**Imagen 5: Registro**
 
-** imagen 6 Inicio de sesion **
+![Registro](https://github.com/user-attachments/assets/9d514faf-eeab-46a1-9645-8e638afadffc)
 
-<img width="866" height="397" alt="image" src="https://github.com/user-attachments/assets/693d3324-4f79-4b7c-93ac-c2a7659fa010" />
+**Imagen 6: Inicio de sesión**
 
+![Inicio de sesión](https://github.com/user-attachments/assets/693d3324-4f79-4b7c-93ac-c2a7659fa010)
 
-### Salida del Sistema del dashboard
+---
 
-<img width="1212" height="903" alt="image" src="https://github.com/user-attachments/assets/325b1b60-f0ea-4ca7-9643-b0a1802c4c69" />
-<img width="1158" height="521" alt="image" src="https://github.com/user-attachments/assets/21ae526b-e0a2-465e-be80-1b87e45bb8c6" />
+### Salida del Sistema del Dashboard
+
+![Dashboard](https://github.com/user-attachments/assets/325b1b60-f0ea-4ca7-9643-b0a1802c4c69)
+![Dashboard](https://github.com/user-attachments/assets/21ae526b-e0a2-465e-be80-1b87e45bb8c6)
+# Mi_Hotel_Booking
