@@ -148,32 +148,32 @@ python sistema_metricas.py
 
 **Imagen 1: Ingreso de habitación**
 
-![Ingreso de habitación](https://github.com/user-attachments/assets/4fb4c839-0168-4ae8-9725-eb8787783158)
+![Ingreso de habitación]<img width="781" height="392" alt="image" src="https://github.com/user-attachments/assets/b5f03be2-e402-4e64-9c80-fbcfe76e0abc" />
+
 
 **Imagen 2: Registro de habitación**
 
-![Registro de habitación](https://github.com/user-attachments/assets/a9c8256a-749d-42da-9ac3-c292a92d15a1)
+![Registro de habitación]<img width="755" height="345" alt="image" src="https://github.com/user-attachments/assets/09b4674a-55eb-4eda-a00f-858ed04793a6" />
+
 
 **Imagen 3: Pago**
 
-![Pago](https://github.com/user-attachments/assets/e476aa64-cbad-4d29-ac29-376359d6202a)
+![Pago]<img width="603" height="111" alt="image" src="https://github.com/user-attachments/assets/64e11f95-24e4-47c9-8038-dc724dc5216b" />
 
-**Imagen 4: Pago**
 
-![Pago](https://github.com/user-attachments/assets/364b38d1-f147-4e63-94b0-9ff2f0cbe608)
+**Imagen 4: Registro**
 
-**Imagen 5: Registro**
+![Registro] <img width="812" height="386" alt="image" src="https://github.com/user-attachments/assets/bea45835-fd2b-4a5c-906b-fa70e04fb0ba" />
 
-![Registro](https://github.com/user-attachments/assets/9d514faf-eeab-46a1-9645-8e638afadffc)
 
-**Imagen 6: Inicio de sesión**
+**Imagen 5: Inicio de sesión**
 
-![Inicio de sesión](https://github.com/user-attachments/assets/693d3324-4f79-4b7c-93ac-c2a7659fa010)
+![Inicio de sesión]<img width="752" height="296" alt="image" src="https://github.com/user-attachments/assets/182dbe78-2bf9-41f5-97c7-fe12923de7f1" />
+
 
 ---
 
 ### Salida del Sistema del Dashboard
+<img width="918" height="415" alt="image" src="https://github.com/user-attachments/assets/8791d5e1-b438-4e5a-b9e7-19c667d19ded" />
 
-![Dashboard](https://github.com/user-attachments/assets/325b1b60-f0ea-4ca7-9643-b0a1802c4c69)
-![Dashboard](https://github.com/user-attachments/assets/21ae526b-e0a2-465e-be80-1b87e45bb8c6)
 # Mi_Hotel_Booking
