@@ -1,1 +1,14 @@
-{% extends 'base.html' %}{% block content %}<h2>Pago</h2><form method='post' action='{{ url_for('pay') }}'><input type='hidden' name='booking_id' value='{{ booking_id }}'><button>Pagar</button></form>{% endblock %}
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Pago</h2>
+
+<!-- Formulario de pago -->
+<form method="post" action="{{ url_for('pay') }}" class="payment-form">
+    <input type="hidden" name="booking_id" value="{{ booking_id }}">
+
+    <!-- Botón de pago -->
+    <button type="submit" class="btn btn-primary">Pagar</button>
+</form>
+
+{% endblock %}

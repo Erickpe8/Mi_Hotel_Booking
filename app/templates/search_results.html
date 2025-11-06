@@ -3,17 +3,22 @@
 {% block content %}
 <h2>Resultados de la Búsqueda</h2>
 
+<!-- Habitaciones Disponibles -->
 {% if available_rooms %}
     <h3>Habitaciones Disponibles</h3>
-    <ul>
+    <ul class="room-list available-rooms">
     {% for room in available_rooms %}
-        <li>
-            {{ room['room_number'] }} - {{ room['room_type_name'] }} - ${{ room['price'] }}
+        <li class="room-item">
+            <div class="room-details">
+                <span class="room-number">Habitación: {{ room['room_number'] }}</span> - 
+                <span class="room-type">{{ room['room_type_name'] }}</span> - 
+                <span class="room-price">${{ room['price'] }}</span>
+            </div>
             <form action="{{ url_for('book') }}" method="post">
                 <input type="hidden" name="room_id" value="{{ room['room_id'] }}">
                 <input type="hidden" name="start_date" value="{{ start_date }}">
                 <input type="hidden" name="end_date" value="{{ end_date }}">
-                <button type="submit">Reservar</button>
+                <button type="submit" class="btn btn-primary">Reservar</button>
             </form>
         </li>
     {% endfor %}
@@ -22,12 +27,14 @@
     <p>No hay habitaciones disponibles.</p>
 {% endif %}
 
+<!-- Habitaciones Ocupadas -->
 {% if occupied_rooms %}
     <h3>Habitaciones Ocupadas</h3>
-    <ul>
+    <ul class="room-list occupied-rooms">
     {% for room_number in occupied_rooms %}
-        <li>Habitación {{ room_number }} - Ocupada</li>
+        <li class="room-item">Habitación {{ room_number }} - Ocupada</li>
     {% endfor %}
     </ul>
 {% endif %}
+
 {% endblock %}
